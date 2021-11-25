@@ -11,7 +11,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as mySocket:
 
     print('incoming request found')
     with conn:
-        print('connected by some address:', addr)
+        print('connected by:', addr)
         while True:
             incomingData = conn.recv(1024)
             if not incomingData:
